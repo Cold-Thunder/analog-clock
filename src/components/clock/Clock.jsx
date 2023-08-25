@@ -9,6 +9,8 @@ const Clock =()=>{
         let m = document.querySelector('.min');
         let s = document.querySelector('.sec');
 
+        let digital = document.querySelector('.digital');
+
         setInterval(() => {
             let date = new Date();
 
@@ -19,6 +21,8 @@ const Clock =()=>{
             h.style.transform = `rotate(${hour}deg)`;
             m.style.transform = `rotate(${min}deg)`;
             s.style.transform = `rotate(${sec}deg)`;
+
+            digital.innerHTML = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
 
         }, 0);
     })
@@ -45,6 +49,7 @@ const Clock =()=>{
                     <div className="number num10">10</div>
                     <div className="number num11">11</div>
                 </div>
+                <div className="digital"></div>
             </div>
         </div>
     )

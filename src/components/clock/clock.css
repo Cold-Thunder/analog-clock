@@ -19,6 +19,7 @@ h1{
     text-shadow:3px 3px 5px rgba(27, 224, 250, 0.5), -3px 3px 5px rgba(27, 224, 250, 0.5);
 }
 .clock{
+
     margin-top:50px;
     width:var(--width);
     height:var(--height);
@@ -130,4 +131,22 @@ h1{
     left:11%;
     transform-origin:100%;
     transition: all 0.5s cubic-bezier(.86,.07,0,1.73);
+}
+
+
+/* digital section is here  */
+
+.digital{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    height:70px;
+    width:230px;
+    font-size: 30px;
+    background-color: green;
+    margin-left:23%;
+    margin-top:20%;
+    border-radius: 10px;
+    text-shadow:3px 3px 5px rgb(0,0,0,0.3), -3px -3px 5px rgb(0,0,0,0.3);
+    box-shadow:inset 5px 5px 5px rgb(0,0,0,0.3), inset -5px -5px 5px rgb(0,0,0,0.3);
 }
