@@ -11,5 +11,5 @@
    npm install
    npm run dev
    ```
-3. The copy the link to the browser
+3. Copy the link to the browser
 
