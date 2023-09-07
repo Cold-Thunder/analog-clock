@@ -1,0 +1,7 @@
+{
+  "name": "Analog-clock",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

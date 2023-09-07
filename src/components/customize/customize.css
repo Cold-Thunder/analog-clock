@@ -1,0 +1,29 @@
+.cust-main{
+    width:40vw;
+    background-color: aqua;
+    height:600px;
+    padding:20px;
+    padding-right:10px;
+    box-sizing: border-box;
+    border-radius: 0 10px 10px 10px;
+}
+
+.close:hover{
+    box-shadow: 3px 3px 3px rgb(0,0,0,0.3), -3px 3px 3px rgb(0,0,0,0.3), 3px -3px 3px rgb(0,0,0,0.3);
+    
+}
+.custom-start{
+
+}
+h1{
+    color:white;
+    font-size:30px;
+
+}
+
+.click{
+    transform:rotateX(360deg);
+    background-color: aqua;
+    color:black;
+    text-shadow:3px 3px 5px rgb(0,0,0,0.3), -3px -3px 5px rgb(0,0,0,0.3);
+}
