@@ -1,29 +1,153 @@
-.cust-main{
-    width:40vw;
-    background-color: aqua;
-    height:600px;
-    padding:20px;
-    padding-right:10px;
+.cust-main {
+    width: 50vw;
+    background-color: black;
+    height: 600px;
+    padding: 20px;
+    padding-right: 10px;
     box-sizing: border-box;
     border-radius: 0 10px 10px 10px;
+    box-shadow: 3px 3px 5px rgba(21, 97, 240, 1),
+        -3px 3px 5px rgba(21, 97, 240, 1),
+        3px -3px 5px rgba(21, 97, 240, 1),
+        -3px -3px 5px rgba(21, 97, 240, 1);
 }
 
-.close:hover{
-    box-shadow: 3px 3px 3px rgb(0,0,0,0.3), -3px 3px 3px rgb(0,0,0,0.3), 3px -3px 3px rgb(0,0,0,0.3);
-    
-}
-.custom-start{
-
-}
-h1{
-    color:white;
-    font-size:30px;
+.close:hover {
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3),
+        -3px 3px 3px rgb(0, 0, 0, 0.3),
+        3px -3px 3px rgb(0, 0, 0, 0.3);
 
 }
 
-.click{
-    transform:rotateX(360deg);
+.custom-start {}
+
+h1 {
+    color: white;
+    font-size: 30px;
+
+}
+
+.click {
+    transform: rotateX(360deg);
     background-color: aqua;
-    color:black;
-    text-shadow:3px 3px 5px rgb(0,0,0,0.3), -3px -3px 5px rgb(0,0,0,0.3);
+    color: black;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3),
+        -3px -3px 5px rgb(0, 0, 0, 0.3);
+}
+
+.cust {
+    margin: 10px 0;
+    height: 50px;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(21, 97, 240, 1),
+    -3px 3px 5px rgba(21, 97, 240, 1),
+    3px -3px 5px rgba(21, 97, 240, 1),
+    -3px -3px 5px rgba(21, 97, 240, 1);
+    box-sizing: border-box;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    position: relative;
+    z-index: 3;
+}
+
+.cust:hover {
+    text-shadow: 3px 3px 3px rgba(21, 97, 240, 1),
+        -3px 3px 3px rgba(21, 97, 240, 1),
+        3px -3px 3px rgba(21, 97, 240, 1),
+        -3px -3px 3px rgba(21, 97, 240, 1);
+    box-shadow: 3px 3px 5px rgb(101, 149, 240),
+        -3px 3px 5px rgb(101, 149, 240),
+        3px -3px 5px rgb(101, 149, 240),
+        -3px -3px 5px rgb(101, 149, 240);
+}
+
+p {
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+    width: 95%;
+}
+
+.drop-arr {
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all ease-in 0.3s;
+}
+
+.drop-click {
+    transform: rotateZ(180deg);
+}
+
+.color-btns {
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.clr-btn {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 10px;
+    /* background-color: rgb(0,0,0,0); */
+    cursor: pointer;
+    transition: 0.3s ease-in all;
+    box-shadow: inset 3px 3px 5px rgb(0, 0, 0, 0.2),
+        inset -3px 3px 5px rgb(0, 0, 0, 0.2),
+        inset 3px -3px 5px rgb(0, 0, 0, 0.2),
+        inset -3px -3px 5px rgb(0, 0, 0, 0.2);
+}
+
+.clr-btn:hover {
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2),
+        -3px 3px 5px rgb(0, 0, 0, 0.2),
+        3px -3px 5px rgb(0, 0, 0, 0.2),
+        -3px -3px 5px rgb(0, 0, 0, 0.2);
+}
+
+
+.clr-btn-sec {
+    height: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transform: translateX(400%);
+    transition: all 0.3s ease-in;
+}
+
+.clr-click {
+    transform: translateX(0%);
+    visibility: visible;
+    height: 55px;
+    transition: all 0.3s ease-in;
+}
+
+.blue{
+    background-color: blue;
+}
+.bisque{
+    background-color: bisque;
+}
+
+.aqua{
+    background-color: aqua;
+}
+.aquamarin{
+    background-color: aquamarine;
+}
+.dark-gray{
+    background-color: darkgray;
 }
