@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import Custom from'../customize/Customize.jsx'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import Custom from'../customize/Customize.jsx'
 import './clock.css'
 
 const Clock = () => {

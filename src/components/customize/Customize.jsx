@@ -9,7 +9,9 @@ const Customize = () => {
         let customize = document.querySelectorAll('.cust');
         let dropDown = document.querySelectorAll('.drop-arr');
 
-        let clrBtn = document.querySelectorAll('.clr-btn-sec');
+        let clrBtns = document.querySelectorAll('.clr-btn-sec');
+        let clrBorderBtn = document.querySelectorAll('.clr-border-btn');
+        let clrBackBtn = document.querySelectorAll('.clr-back-btn');
 
         let click = false;
         customize.forEach(custom => {
@@ -17,12 +19,25 @@ const Customize = () => {
                 click = !click;
                 if (click == true) {
                     dropDown[e.currentTarget.id].classList.add('drop-click');
-                    clrBtn[e.currentTarget.id].classList.add('clr-click');
+                    clrBtns[e.currentTarget.id].classList.add('clr-click');
                 } else {
                     dropDown[e.currentTarget.id].classList.remove('drop-click')
-                    clrBtn[e.currentTarget.id].classList.remove('clr-click');
+                    clrBtns[e.currentTarget.id].classList.remove('clr-click');
                 }
 
+            })
+        })
+
+
+        clrBorderBtn.forEach((btn)=>{
+            btn.addEventListener('click', (e)=>{
+                document.documentElement.style.setProperty(`--border`, `${e.target.value}`);
+            })
+        })
+
+        clrBackBtn.forEach((btn)=>{
+            btn.addEventListener('click', (e)=>{
+                document.documentElement.style.setProperty(`--back-color`, `${e.target.value}`);
             })
         })
     })
@@ -40,11 +55,11 @@ const Customize = () => {
                         </div>
                         <div className="clr-btn-sec">
                             <div className="color-btns" id={0}>
-                                <button className="clr-back-btn clr-btn"></button>
-                                <button className="clr-back-btn clr-btn"></button>
-                                <button className="clr-back-btn clr-btn"></button>
-                                <button className="clr-back-btn clr-btn"></button>
-                                <button className="clr-back-btn clr-btn"></button>
+                                <button className="clr-back-btn clr-btn teal" value="#008080"></button>
+                                <button className="clr-back-btn clr-btn midnight" value="#191970"></button>
+                                <button className="clr-back-btn clr-btn darkSlate" value="#2F4F4F"></button>
+                                <button className="clr-back-btn clr-btn saddle" value="#8B4513"></button>
+                                <button className="clr-back-btn clr-btn darkGreen" value="#006400"></button>
                             </div>
                         </div>
                     </div>
@@ -55,11 +70,11 @@ const Customize = () => {
                         </div>
                         <div className='clr-btn-sec'>
                             <div className="color-btns" id={1}>
-                                <button className="clr-border-btn clr-btn blue"></button>
-                                <button className="clr-border-btn clr-btn bisque"></button>
-                                <button className="clr-border-btn clr-btn aqua"></button>
-                                <button className="clr-border-btn clr-btn aquamarin"></button>
-                                <button className="clr-border-btn clr-btn dark-gray"></button>
+                                <button className="clr-border-btn clr-btn sandy" value="#F4A460"></button>
+                                <button className="clr-border-btn clr-btn bisque" value="#FFE4C4"></button>
+                                <button className="clr-border-btn clr-btn aqua" value="#00FFFF"></button>
+                                <button className="clr-border-btn clr-btn aquamarin" value="#7FFFD4"></button>
+                                <button className="clr-border-btn clr-btn light-gray" value="#D3D3D3"></button>
                             </div>
                         </div>
                     </div>
