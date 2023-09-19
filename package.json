@@ -1,20 +1,24 @@
 {
+  "homepage": "https://github.com/Cold-Thunder/analog-clock",
   "name": "analog-clock",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "@capacitor/android": "^5.3.0",
     "@capacitor/core": "^5.3.0",
     "@capacitor/ios": "^5.3.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^2.1.3"
