@@ -32,18 +32,18 @@ const StopWatch = () => {
                         cmili = 0;
                         csec += 1;
                         s.innerText = csec;
-                        if(csec > 60){
+                        if(csec > 59){
                             csec = 0;
                             cmin += 1;
                             m.innerText = cmin;
-                            if(cmin > 60){
+                            if(cmin > 59){
                                 cmin = 0;
                                 chour += 1;
                                 h.innerText = chour;
                             }
                         }
                     }  
-                }, 20);
+                }, 10);
             } else {
                 st.innerText = 'Start';
                 st.classList.remove('clicked');

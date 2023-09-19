@@ -28,7 +28,6 @@ const Customize = () => {
             })
         })
 
-
         clrBorderBtn.forEach((btn)=>{
             btn.addEventListener('click', (e)=>{
                 document.documentElement.style.setProperty(`--border`, `${e.target.value}`);

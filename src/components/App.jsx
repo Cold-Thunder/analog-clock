@@ -22,7 +22,7 @@ const App = () => {
     }
 
     useEffect(()=>{
-        let btn = document.querySelector('.btn1');
+        let btn = document.querySelector('.btn');
 
         value ? btn.classList.remove('click') : btn.classList.add('click');
         if(value){
@@ -36,11 +36,9 @@ const App = () => {
 
     return (
         <div className="main">
-            <div className="btns">
                 <div className="btn-sec">
                     <button className="btn1 btn" onClick={stopWatch}></button>
                 </div>
-            </div>
             <div className="clock-sec">
                 {value ? <Analog /> : <StopWatch />}
             </div>

@@ -41,7 +41,6 @@ const Clock = () => {
                 button.classList.remove('clicked');
             }
             close ? custom.classList.remove('custom-show') : custom.classList.add('custom-show'); 
-            console.log(close);
         })
 
 
